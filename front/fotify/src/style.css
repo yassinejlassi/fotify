@@ -1,0 +1,533 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+}
+body {
+    font-weight: 400;
+    /* font-family: Helvetica Neue,Helvetica,Arial,sans-serif; */
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.my-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top:0;
+    background: white;
+    box-shadow: 0 8px 2px -2px rgba(0,0,0,.2);
+    
+}
+
+/* personnalisation du logo  */
+.fotify-logo{display: flex;width: 50%;align-items: center;color: inherit;
+    text-decoration: none;}
+.fotify-logo h1{margin: 20px;}
+.fotify-logo:hover  h1 {
+    color: #1890ff;
+}
+.fotify-logo:hover svg{
+    fill:#1890ff;
+    
+}
+.fotify-logo:hover{
+  text-decoration: none
+}
+
+
+/* personnalisation des boutons de la nav bar */
+.nav-buttons,.nav-home{
+    display: flex;
+    width:30%;
+    font-family: Helvetia Neue,Helvetica,Arial,sans-serif;
+    align-items: baseline;
+    width:17%;
+    justify-content: space-around}
+.nav-home{
+  width:250px;  
+  display: flex;
+  align-self: center}
+.nav-home-display{text-decoration: none;
+align-self: center}
+.log-in{background: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;}
+.sign-up{
+    background: transparent;
+    
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 32px;
+    height: 60px;}
+.nav-home button{background: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+border: 2px solid black;
+border-radius: 13%;
+height: 50px;
+}
+
+.nav-home-display:hover{
+  text-decoration: none;
+  
+}
+.search:hover{
+  color:#1890ff
+}
+.logout:hover{
+  color:#1890ff
+}
+
+.nav-buttons .sign-in{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    background:red;
+    color: black;}
+.nav-buttons button:hover{
+    color:#1890ff}
+
+
+.main-header-title{
+   
+    background:url(https://images.unsplash.com/photo-1464398204810-9d6e5076f0ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80) no-repeat ;
+    width: 100%;
+    display: flex;
+    margin-top: 70px;}
+.header .logo{
+    margin-bottom: 10px;
+    margin-bottom: -28px;
+    text-indent: 36px;
+}
+.header{
+    margin: 130px;
+    font-size: 21px;
+}
+
+.offers{
+    text-align: center;
+    margin-top: 100px;
+}
+.offers .offers-title{
+    margin-bottom: 54px;}
+
+
+/* svg taille */
+.icon{
+    height: 50px;
+    width: 50px;
+}
+
+.gain{
+    display: flex;
+    justify-content: space-around;
+}
+
+.offer{
+    width:370px;
+}
+.offer p{
+    text-align: left;
+}
+
+.h1-title{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.editor-photo{
+    margin: 10px;
+    
+}
+.img{
+    height: 450px;
+    width: 400px
+}
+.intro{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: url(https://web.500px.com/static/media/banner_licensing_mobile@2x.d8d327f1.png)no-repeat;
+    background-size: cover;
+    height: 524px;
+    color:white;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    flex-direction: column;
+}
+.intro .text-center{display: flex;
+    align-self: center;}
+.row-photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+  
+  .photo-gallery {
+    color: #313437;
+    background-color: #fff;
+  }
+  .join{
+    background-color: rgb(69, 69, 124);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+      height: 360px;
+      
+      color: white;
+  }
+  .join h1{
+      line-height: 100px;
+      font-size: 47px;
+  }
+  .join .join-arg{
+      
+    margin-bottom: 37px;
+      text-align: center;
+    font-size: 24px;
+    width: 66%;
+  }
+
+  .sign-up-btn{
+    background: white;
+    height: 72px;
+    width: 225px;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 52px;
+    
+  }
+
+  .sign-up-btn:hover{
+    color:#1890ff;
+  }
+
+  
+  .footer{
+      
+      height: 300px;
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+   }
+  .footer .footer-paragraphe{
+    color:rgb(109, 115, 120);
+      width: 410px;
+    font-size: 20px;
+    margin: 40px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;
+    
+  }
+  .darker-footer{
+    color:rgb(109, 115, 120);
+      text-align: center
+  }
+  .darker-footer .Copyright{
+    height: 43px;
+    color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+hr{
+    width: 76%;
+    align-self: center;
+    margin: 10px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.follow-us{
+    margin-right: 199px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 39px;
+    text-align: center;
+}
+
+/*  login page   */
+
+.login form .page-login-btn {
+    background: #1890ff;
+    border: none;
+    border-radius: 2px;
+    padding: 11px;
+    margin-top: px;
+    color: white;
+    height: 44px;
+    font-size: 20px;
+    width: 174px;
+  }
+  .page-login-btn:hover {
+    color:white;
+  }
+  .login {
+    background: #f1f7fc;
+    padding: 80px 0;
+  }
+  
+  .login form {
+    max-width: 320px;
+    width: 90%;
+    margin: 140px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 4px;
+    color: #505e6c;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .login form .form-input {
+    background: #f7f9fc;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 8px;
+    height: 42px;
+    margin: 10px
+  }
+  
+  .form-input:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+  }
+  .signup {
+    color: #505e6c;;
+    text-decoration: none;
+    background-color: transparent;
+    margin-top: 8px;
+  }
+
+  .signup:hover{
+      color:#007bff;
+  }
+  .signup-page-title{
+      margin-bottom: 25px;
+  }
+  
+  
+  /* page inscription */
+  .inscri form .inscri-btn {
+    background: #1890ff;
+    border: none;
+    border-radius: 2px;
+    padding: 11px;
+    margin-top: px;
+    color: white;
+    height: 44px;
+    font-size: 20px;
+    width: 174px;}
+    .inscri form {
+        max-width: 320px;
+        width: 90%;
+        margin: 140px auto;
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 4px;
+        color: #505e6c;
+        box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+      }
+.inscri form .form-input {
+        background: #f7f9fc;
+        border: none;
+        border-bottom: 1px solid #dfe7f1;
+        border-radius: 0;
+        box-shadow: none;
+        outline: none;
+        color: inherit;
+        text-indent: 8px;
+        height: 42px;
+        margin: 10px
+      }
+      .inscri .form-input:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+      }
+  .inscri {
+    background: #f1f7fc;
+    padding: 80px 0;
+  }
+  
+
+  /* page profil */
+
+  .profile{
+    margin-top: 70px;
+    display:flex;
+    text-align: left;
+flex-direction: column  ;
+justify-content: center  
+  }
+  .profile-pic{ height: 80px;
+    width: 80px;
+    border-radius: 40px,}
+    .presentation{
+     
+      font-size: 50px;
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      background: url(https://images.pexels.com/photos/22185/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+      background-position-x: 5px;
+      background-position-y: -200px;
+      background-size: cover
+     
+    }
+    .vertical{
+    width: 1px;
+border-left: outset;
+height: 500px;}
+    
+    .cover{
+     height: 200px;
+     width: 200px;
+     
+    }
+    .name{
+     
+      margin-left: 200px;
+      margin-top: 80px;
+      margin-bottom: 80px;
+     
+    }
+    .name h2{
+      font-size: 100px;
+      
+    }
+  
+    .gallerie{
+      display: flex;
+      font-family: -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;
+flex-direction: column;
+margin: 70px;
+    }
+    .gallerie-container{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .gallerie-title{
+      color:#f1c40f;
+      text-align: center;
+    }
+    .gallerie-title h1{
+      font-size: 75px;
+      text-align: center
+    }
+    .btn-primary {
+      background-color: #212529 !important;
+      border: none !important;
+      display: flex !important;
+    margin: auto !important;
+    padding: 15px !important;
+    height: 100px;
+    width: 100px;
+    border-radius: 100% !important;
+justify-content: center !important;
+text-align: center !important;
+    }
+    .btn-primary h1{
+      font-size: 50px !important
+    }
+   .btn-primary:hover{
+    background-color: #f1c40f !important;
+    color: #212529 !important
+   }
+
+.my-gallerie{
+  display: flex;
+flex-wrap: wrap;
+justify-content: center 
+  
+}
+    .cadre{
+      display: inline-block;
+	width: 90%;
+	max-width: 20rem;
+	margin: 1rem;
+	font-size: 1rem;
+	text-decoration: none;
+	overflow: hidden;
+	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+    }
+    .cadre:hover {
+      transform: translateY(-0.5rem) scale(1.0125);
+      box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+    }
+    .cadre img{ height: 260px;
+      width: 360px;}
+
+      .pic-title{
+        display: block;
+        padding: 1em 0.5em;
+        color: white;
+       height: 100%;
+        background: #212529;
+        text-align: center
+      }
+
+
+
+      /* page recherche */
+      .search-bar{
+        margin-top: 70px
+      }
+
+
+      .search-zone{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 70px;  
+      }
+
+      .input{
+        display: block;
+width:30%;
+height: calc(2.25rem + 2px);
+padding: .375rem .75rem;
+font-size: 1rem;
+line-height: 1.5;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: .25rem;
+transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      }
+
+      .all-photos{display: flex;
+        flex-wrap: wrap;
+        justify-content: center}
