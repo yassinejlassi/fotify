@@ -8,6 +8,7 @@ import Inscription from './components/inscription'
 import Profile from './pages/profile'
 import Gallerie from './components/gallerie'
 import Search from './pages/search'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
 
