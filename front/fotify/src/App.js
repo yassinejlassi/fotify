@@ -7,7 +7,6 @@ import Loginpage from './components/loginpage'
 import Inscription from './components/inscription'
 import Profile from './pages/profile'
 import Gallerie from './components/gallerie'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Search from './pages/search'
 
 
